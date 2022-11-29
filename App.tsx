@@ -4,6 +4,7 @@ import LinearGradient from 'react-native-linear-gradient';
 
 import StartGameScreen from './src/screens/StartGameScreen';
 import GameScreen from './src/screens/GameScreen';
+import Colors from './src/constants/colors';
 
 const App = () => {
   const [userNumber, setUserNumber] = useState();
@@ -19,7 +20,7 @@ const App = () => {
   }
 
   return (
-    <LinearGradient colors={['#4e0329', '#ddb52f']} style={styles.rootScreen}>
+    <LinearGradient colors={[Colors.primary700, Colors.accent500]} style={styles.rootScreen}>
       <ImageBackground
         source={require('./src/assets/images/turtle.png')}
         resizeMode="contain"
