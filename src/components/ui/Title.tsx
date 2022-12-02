@@ -7,6 +7,7 @@ function Title({ children }) {
 
 const styles = StyleSheet.create({
   title: {
+    fontFamily: 'NotoSansKR-Black',
     fontSize: 18,
     fontWeight: 'bold',
     color: 'white',
